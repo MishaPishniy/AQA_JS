@@ -1,1 +1,3 @@
-fnkaslklamsl,lm,lacs
+function (parm1) {
+    
+}
