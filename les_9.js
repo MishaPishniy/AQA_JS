@@ -30,6 +30,7 @@ let user = {
 //user.likes birds = false   //помилка
 
 user["likes birds"] = false;
+console.log(user)
 console.log(user["likes birds"]);
 
 
