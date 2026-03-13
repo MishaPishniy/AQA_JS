@@ -2,11 +2,11 @@
 class CoffeeMachine {
   turnOn() {
     console.log("Кавомашина увімкнена");
-    this.#heatWater();
+    this._heatWater();
     this.#makeCoffee();
   }
 
-  #heatWater() {
+  _heatWater() {
     console.log("Вода нагрівається");
   }
 
@@ -17,3 +17,4 @@ class CoffeeMachine {
 
 const machine = new CoffeeMachine();
 machine.turnOn();
+machine._heatWater();

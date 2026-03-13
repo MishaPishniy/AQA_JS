@@ -15,7 +15,13 @@ class Dog extends Animal {
   }
 }
 
-const dog1 = new Dog("Рекс");
 
+
+const cat = new Animal("Муркотик")
+
+cat.bark();
+cat.speak();
+
+const dog1 = new Dog("Рекс");
 dog1.speak();
 dog1.bark();
