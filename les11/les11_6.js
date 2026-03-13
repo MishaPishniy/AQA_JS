@@ -27,7 +27,7 @@ Promise.all([p1, p2, p3])
 
 ////Promise.all() помилка
 const p1 = Promise.resolve("Користувач");
-const p2 = Promise.reject("Сервер товарів недоступний");
+const p2 = Promise.resolve("Сервер товарів недоступний");
 const p3 = Promise.resolve("Коментарі");
 
 Promise.all([p1, p2, p3])
@@ -42,12 +42,13 @@ Promise.all([p1, p2, p3])
 const p1 = Promise.resolve("OK");
 const p2 = Promise.reject("Error");
 
-Promise.allSettled([p1, p2]).then((results) => {
+Promise.allSettled([p1, p2])
+  .then((results) => {
   console.log(results);
 });
 
 //Promise.race()
-const p1 = new Promise((resolve) => setTimeout(() => resolve("Перший"), 1000));
+const p1 = new Promise((resolve) => setTimeout(() => resolve("Перший"), 3000));
 const p2 = new Promise((resolve) => setTimeout(() => resolve("Другий"), 2000));
 
 Promise.race([p1, p2]).then((result) => {

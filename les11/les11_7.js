@@ -36,3 +36,11 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .catch((error) => {
     console.log("Сталася помилка:", error);
   });
+
+
+  //ЗАБУЛИ json
+//fetch
+  fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response) => {
+    console.log(response);
+  });

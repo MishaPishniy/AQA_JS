@@ -1,6 +1,6 @@
 //Тут ми тільки створили Promise
 const myPromise = new Promise((resolve, reject) => {
-  const success = true;
+  const success = false;
 
   if (success) {
     resolve("Дані успішно отримані");

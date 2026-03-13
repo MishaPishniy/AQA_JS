@@ -31,7 +31,7 @@ myPromise
   })
   .then((newData) => {
     console.log("2 then:", newData);
-    return newData.toUpperCase();
+    return newData ;
   })
   .then((finalData) => {
     console.log("3 then:", finalData);
