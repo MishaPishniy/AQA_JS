@@ -14,9 +14,4 @@ const obj = {
 	layzy: false
 };
 
-function newSerkrfmemlwecsacas(
-	param1,
-	pamw2,
-	param3,
-	param4t
-) {}
+function newSerkrfmemlwecsacas(param1, pamw2, param3, param4t) {}

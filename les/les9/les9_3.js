@@ -6,14 +6,14 @@ for (key in object) {
   */
 
 let user = {
-  name: "Іван",
-  age: 30,
-  isAdmin: true
+	name: 'Іван',
+	age: 30,
+	isAdmin: true
 };
 
 for (let key in user) {
-  // ключі
-  console.log( key );  // name, age, isAdmin
-  // значення ключів
-  console.log( user[key] ); // Іван, 30, true
+	// ключі
+	console.log(key); // name, age, isAdmin
+	// значення ключів
+	console.log(user[key]); // Іван, 30, true
 }

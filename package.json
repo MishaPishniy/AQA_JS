@@ -3,6 +3,18 @@
     "@eslint/js": "^10.0.1",
     "eslint": "^10.0.3",
     "globals": "^17.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
     "prettier": "3.8.1"
+  },
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "lint": "eslint  . "
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix"
+    ]
   }
 }
