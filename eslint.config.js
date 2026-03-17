@@ -5,6 +5,8 @@ export default defineConfig([
 	// matches all files ending with .js
 	{
 		files: ['**/*.js'],
-		rules: {}
+		rules: {
+			'no-unused-vars': 'error'
+		}
 	}
 ]);
