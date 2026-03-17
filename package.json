@@ -10,7 +10,8 @@
   "type": "module",
   "scripts": {
     "prepare": "husky",
-    "lint": "eslint  . "
+    "lint": "eslint  . ",
+    "format": "prettier . --check"
   },
   "lint-staged": {
     "**/*.js": [

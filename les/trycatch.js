@@ -18,7 +18,7 @@ finally {
 
 
 try {
-    let age = -5;
+    let age = -5
     if (age < 0) {
           throw new Error("age не може бути < 0")
     }
